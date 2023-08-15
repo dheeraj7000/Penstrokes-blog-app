@@ -8,6 +8,7 @@ import CreateBlog from './Pages/createblog';
 import { BlogContext } from './Pages/BlogContext';
 import { useState } from 'react';
 import ReadBlogContent from './Pages/ReadBlogContent';
+import DeleteBlogs from './Pages/deletePost';
 import 'boxicons'
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Route path="/createblog" element={<CreateBlog/>} />
       <Route path='/blogs'   element={<Blogs/>} />
       <Route path='/ReadBlogContent/:id'   element={<ReadBlogContent/>} />
+      <Route path='/deletePost/:id'   element={<DeleteBlogs/>} />
       </Routes>
       </BlogContext.Provider>
     </div>

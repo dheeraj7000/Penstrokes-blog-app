@@ -1,5 +1,7 @@
 .navbg{
-    background-color:#4477CE ;
+    background-color:#1971c9 ;
+    border: thick double #232233;
+
     
 }
 /* #272829 */
@@ -9,42 +11,47 @@
     font-size:1.1em;
 }
 #navlist a{
-    color:white;
+    color:rgb(16, 16, 16);
     margin-right: 40px;
     font-weight: 600;
     transition:.5s all ease; 
 }
 #navlist a:hover{
-    color:#7cafc7;
+    color:#455b36;
    
 }
 
 /* Home Content start*/
-.bg{
-    width:100%;
-    height:91.5vh;
-    background-color:#1D5D9B;
-    text-align: center;
-    position:fixed;
+.bg {
+    background-image: url('C:\Users\Asus\Desktop\blog-app\Blog-Post\images\Untitled.png');
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
 
     
-}
 .homecontent{
-    max-width: 60%;
-    padding:25px 5px;
-    margin: 70px auto 0;
+    max-width: 100%;
+    padding:30px 10px;
+    margin: 150px auto 0;
     z-index: 1;
 }
 
 .homecontent-head1{
-    font-size: 3rem;
-    color:white;
+    font-size: 2rem;
+    color:rgb(255, 255, 255);
+
     letter-spacing: .1em;
-    font-weight: lighter;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-weight: rgb(253, 253, 253);
+    font-family: 'Open Sans', sans-serif;
 }
 .homecontent-head2{
-    color:white;
+    color:rgb(27, 27, 27);
+    
     font-size: 1.2em;
     letter-spacing: 2px;
     line-height: 2em;
@@ -52,7 +59,8 @@
 
 .btn1{
     padding: 0.875rem 1.25rem;
-    background-color: #ee7e0e;
+    background-color: #0c0c0c; 
+    border: thick double #8daebc;
     padding:15px 14px;
     border-radius: 3px;
     font-size: .8125rem;
@@ -60,11 +68,15 @@
     cursor: pointer;
 }
 .btn1:hover{
-    background-color: #ff8000;
+    background-color: #0a0a0a;
+    border: thick double #32a1ce;
+
     color:whitesmoke;
 }
 .btn2{
     padding: 0.875rem 1.25rem;
+    border: thick double #7faaba;
+
     padding:15px 14px;
     border-radius: 3px;
     font-size: .8125rem;
@@ -76,30 +88,40 @@
 
 /*create blog starts here*/
 
-.form-main{
+.form-main {
+    background-image: url('https://www.hdwallpaper.nu/wp-content/uploads/2017/03/grey-7.jpg');
+    background-size: cover;
+    border: thick double #d1ed99;
     position: fixed;
     width: 100%;
-    min-height:100vh;
-    background: rgb(32,210,254);
-    background: linear-gradient(90deg, rgba(32,210,254,1) 0%, rgba(115,107,254,1) 100%);
+    height: 100vh;
+    border: solid;
+    border: dashed red; 
+    border: thick double #a1cada;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.blog-form{
-    max-width:450px;
-    background-color:white;
-    margin: 10em auto 0px ;
+
+.blog-form {
+    max-width: 750px;
+    font-family: system-ui;
+    background-color: rgb(208, 208, 208);
+    border-radius: 10px;
     z-index: 1;
-    padding:20px 15px;
-    
+    padding: 20px; /* Adjust padding as needed */
+    box-shadow: 0px 0px 10px rgba(193, 193, 231, 0.1); /* Optional: Add a box shadow for depth */
 }
+
 /*create blog ends here*/
-
-
+.createpostmain {
+    background-image: url('https://cdn.stocksnap.io/img-thumbs/960w/aerial-beach_DBWLJ9UUWB.jpg');
+}
 /*blogs start here*/
 .blogs-main{
-    max-width:100%;
-    min-height:100vh;
-    background: rgb(38,82,151);
-    background: linear-gradient(0deg, rgba(38,82,151,1) 0%, rgba(59,171,255,1) 100%);
+    max-width:125%;
+    min-height:125vh;
+    background-image: url('https://images2.alphacoders.com/774/774372.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -109,30 +131,30 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: start;
+    justify-content: center;
+    align-content: center;
 }
 .blogs-backto{
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
-    color:white;
-    font-size:2rem;
-    padding-bottom:20px;
+    color:rgb(243, 243, 243);
+    font-size:3rem;
+    padding-bottom:25px;
 }
 /*blogs end here*/
 
 /*ReadBlog start here*/
 .readblogmain{
-    background:whitesmoke;
+    background:rgb(97, 97, 97);
     max-width:100%;
     min-height: 100vh;
     
 }
 
 .readblog-mainhead{
-    color:#252B48;
-    font-weight: 2em;
-    padding-top:2.5em;
+    color:#ffffff;
+    font-weight: 3em;
+    padding-top:3.5em;
     text-align: center;
 }
 .readblog-author {
@@ -141,14 +163,14 @@
     padding:3px 8px;
 }
 .readblog-date{
-    margin-left: 53rem;
+    margin-left: 40rem;
 }
 .readblog{
     text-align: center;
     padding:20px 20px;
-    max-width:70%;
+    max-width:75%;
     min-height:400px;
-    background:#FAF3F0;
+    background:#fcfcfc;
     margin: 0px auto;
 }
 .readblogcontent{
