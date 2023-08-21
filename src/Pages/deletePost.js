@@ -34,7 +34,7 @@ export default function DeleteBlogs() {
         const result = await response.json();
         // Handle the result, for example, show a success message or navigate back
         console.log("Deletion result:", result);
-        navigate("/"); // Navigate back to the home page
+        navigate("/Penstrokes-blog-app"); // Navigate back to the home page
       } catch (error) {
         console.error("An error occurred:", error);
       }

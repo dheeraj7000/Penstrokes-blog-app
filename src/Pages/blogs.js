@@ -76,7 +76,7 @@ export default function Blogs() {
         <p className="blogs-backto-para"><b>
 </b></p>
         <Button onClick={() => navigate("/createblog")}>Create your blog</Button>
-        <Button onClick={()=>navigate("/")} >Home</Button>
+        <Button onClick={()=>navigate("/Penstrokes-blog-app")} >Home</Button>
       </div>
       
     </div>
