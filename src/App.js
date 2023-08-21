@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <BlogContext.Provider value={{blog,setBlog}}>
       <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route path='/Blog-post' element={<Home/>}/>
       <Route path="/createblog" element={<CreateBlog/>} />
       <Route path='/blogs'   element={<Blogs/>} />
       <Route path='/ReadBlogContent/:id'   element={<ReadBlogContent/>} />
